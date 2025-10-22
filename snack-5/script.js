@@ -6,3 +6,12 @@ const nums = [2, 8, 4, 7, 12, 87];
 // Soluzione filter
 let even = nums.filter((num) => num % 2 === 0);
 console.log(even);
+
+// Soluzione forEach
+even = [];
+nums.forEach((num) => {
+	if (num % 2 === 0) {
+		even.push(num);
+	}
+});
+console.log(even);
