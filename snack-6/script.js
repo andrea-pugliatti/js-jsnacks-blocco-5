@@ -29,3 +29,16 @@ zucchine.forEach((current) => {
 	}
 });
 console.log(long, other);
+
+// Soluzione for loop
+long = [];
+other = [];
+for (let i = 0; i < zucchine.length; i++) {
+	const current = zucchine[i];
+	if (current.length >= 15) {
+		long.push(current);
+	} else {
+		other.push(current);
+	}
+}
+console.log(long, other);
