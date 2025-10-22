@@ -13,3 +13,11 @@ numbers.forEach((num) => {
 	incremented.push(num + 1);
 });
 console.log(incremented);
+
+// Soluzione for loop
+incremented = [];
+for (let i = 0; i < numbers.length; i++) {
+	const current = numbers[i];
+	incremented.push(current + 1);
+}
+console.log(incremented);
