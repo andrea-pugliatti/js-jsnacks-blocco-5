@@ -23,9 +23,18 @@ const students = [
 // Risultato: '3C'
 
 // Soluzione find
-let student = students.find((current) => current.name === "Marco Lanci");
+const student = students.find((current) => current.name === "Marco Lanci");
 let studentClass = student.class;
 // Avrei potuto fare
 // let studentClass = students.find((current) => current.name === "Marco Lanci").class;
 
-console.log(student, studentClass);
+console.log(studentClass);
+
+// Soluzione forEach
+studentClass = undefined;
+students.forEach((current) => {
+	if (current.name === "Marco Lanci") {
+		studentClass = current.class;
+	}
+});
+console.log(studentClass);
