@@ -17,3 +17,15 @@ const zucchine = [
 let long = zucchine.filter((current) => current.length >= 15);
 let other = zucchine.filter((current) => current.length < 15);
 console.log(long, other);
+
+// Soluzione forEach
+long = [];
+other = [];
+zucchine.forEach((current) => {
+	if (current.length >= 15) {
+		long.push(current);
+	} else {
+		other.push(current);
+	}
+});
+console.log(long, other);
