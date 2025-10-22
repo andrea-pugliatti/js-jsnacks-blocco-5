@@ -11,3 +11,10 @@ const posts = [
 // Soluzione map
 let authorNames = posts.map((post) => post.author);
 console.log(authorNames);
+
+// Soluzione forEach
+authorNames = [];
+posts.forEach((post) => {
+	authorNames.push(post.author);
+});
+console.log(authorNames);
