@@ -25,3 +25,12 @@ const students = [
 // Soluzione find
 let student = students.find((student) => student.id === 2);
 console.log(student);
+
+// Soluzione forEach
+student = {};
+students.forEach((current) => {
+	if (current.id === 2) {
+		student = current;
+	}
+});
+console.log(student);
