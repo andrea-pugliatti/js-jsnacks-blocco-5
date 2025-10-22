@@ -38,3 +38,13 @@ students.forEach((current) => {
 	}
 });
 console.log(studentClass);
+
+// Soluzione for loop
+studentClass = undefined;
+for (let i = 0; i < students.length; i++) {
+	const current = students[i];
+	if (current.name === "Marco Lanci") {
+		studentClass = current.class;
+	}
+}
+console.log(studentClass);
