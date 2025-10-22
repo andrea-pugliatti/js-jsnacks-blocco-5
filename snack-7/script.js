@@ -27,10 +27,21 @@ let student = students.find((student) => student.id === 2);
 console.log(student);
 
 // Soluzione forEach
-student = {};
+student = undefined;
 students.forEach((current) => {
 	if (current.id === 2) {
 		student = current;
 	}
 });
+console.log(student);
+
+// Soluzione for loop
+student = undefined;
+for (let i = 0; i < students.length; i++) {
+	const current = students[i];
+	if (current.id === 2) {
+		student = current;
+		break;
+	}
+}
 console.log(student);
