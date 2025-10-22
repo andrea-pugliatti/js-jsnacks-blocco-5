@@ -18,3 +18,11 @@ posts.forEach((post) => {
 	authorNames.push(post.author);
 });
 console.log(authorNames);
+
+// Soluzione for loop
+authorNames = [];
+for (let i = 0; i < posts.length; i++) {
+	const post = posts[i];
+	authorNames.push(post.author);
+}
+console.log(authorNames);
