@@ -6,3 +6,10 @@ const numbers = [2, 8, 4, 7, 2, 87];
 // Soluzione map
 let incremented = numbers.map((num) => num + 1);
 console.log(incremented);
+
+// Soluzione forEach
+incremented = [];
+numbers.forEach((num) => {
+	incremented.push(num + 1);
+});
+console.log(incremented);
